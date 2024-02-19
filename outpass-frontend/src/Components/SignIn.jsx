@@ -138,14 +138,22 @@ function App() {
             />
           </div>
 
-          <div className="grid place-content-center ml-3 mr-3">
+          <div className="grid place-content-center ml-3">
             <TextInput
               label="Password"
-              type="password"
+              type={showPassword ? "text" : "password"}
               name="hashed_password"
               value={userData.hashed_password}
               onChange={handleInputChange}
             />
+          </div>
+
+          <div className="grid place-content-center ml-1.5 justify-end opacity-90">
+          <img
+            src="https://vectorified.com/images/password-eye-icon-20.png"
+            className="w-5.5 h-3.5 bg-slate-300 pr-0.5 pl-0.5 pt-0.5 pb-0.5 rounded-full mt-6" 
+            onClick={togglepasswordvisibility}
+          ></img>
           </div>
         </div>
 

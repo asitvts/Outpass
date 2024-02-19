@@ -113,8 +113,8 @@ const App = () => {
             <TextInput
               label="Password"
               type="password"
-              name="password"
-              value={userData.password}
+              name="hashed_password"
+              value={userData.hashed_password}
               onChange={handleInputChange}
             />
           </div>
